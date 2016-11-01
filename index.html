@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业网站实训</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/setHomeCollection.js"></script>
+    <script src="js/myfocus-2.0.1.min.js"></script>
+    <script src="js/mf-pattern/mF_fancy.js"></script>
+    <link href="js/mf-pattern/mF_fancy.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- header -->
+<header>
+    <div class="head-content">
+        <ul>
+            <li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+            <li><a href="#" onclick="AddFavorite(window.location, document.title)">加入我们</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+</header>
+<!-- end header  -->
+
+<!-- warpper -->
+<div class="warpper">
+    <div class="logo">
+        <div class="logo-left">
+            <a href="#"><img src="images/logo.jpg" alt="慕课网"></a>
+        </div>
+        <!-- end logo-left -->
+        <div class="logo-right">
+            <img src="images/tel.jpg" alt="电话小图标">24小时服务热线：<span class="tel">123-456-7890</span>
+        </div>
+        <!-- end logo-right -->
+    </div>
+    <!-- end logo -->
+
+    <!-- nav-->
+    <nav>
+       <div class="nav-left">
+           <ul>
+               <li><a href="#">首页</a></li>
+               <li><a href="#">关于慕课</a></li>
+               <li><a href="#">新闻动态</a></li>
+               <li><a href="#">课程中心</a></li>
+               <li><a href="#">在线课程</a></li>
+               <li><a href="#">人才招聘</a></li>
+           </ul>
+       </div>
+        <!-- end nav-left -->
+        <div class="nav-right">
+            <form action="" method="post">
+                <label >
+                    <input type="text" class="search-text">
+                    </label>
+            </form>
+
+        </div>
+        <!-- end nav-right -->
+    </nav>
+    <!-- end nav-->
+
+    <div class="ad" id="picBox">
+        <div class="loading"><img src="images/loading.gif" alt="正在加载中"></div>
+        <div class="pic">
+            <ul>
+                <li><img src="images/ad2.jpg" alt=""></li>
+                <li><img src="images/ad3.jpg" alt=""></li>
+                <li><img src="images/ad4.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end ad -->
+</div>
+<!-- end warpper -->
+
+<script >
+//调用myFocuse中的方法
+    myFocus.set(
+            {
+                id:"picBox"
+            }
+    );
+</script>
+</body>
+</html>
