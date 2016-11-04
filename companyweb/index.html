@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业网站实训</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/setHomeCollection.js"></script>
+    <script src="js/myfocus-2.0.1.min.js"></script>
+    <script src="js/mf-pattern/mF_fancy.js"></script>
+    <link href="js/mf-pattern/mF_fancy.css" rel="stylesheet">
+
+</head>
+<body>
+<!-- header -->
+<header>
+    <div class="head-content">
+        <ul>
+            <li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+            <li><a href="#" onclick="AddFavorite(window.location, document.title)">加入我们</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+    </div>
+</header>
+<!-- end header  -->
+
+<!-- warpper -->
+<div class="wrapper">
+    <div class="logo">
+        <div class="logo-left">
+            <a href="#"><img src="images/logo.jpg" alt="慕课网"></a>
+        </div>
+        <!-- end logo-left -->
+        <div class="logo-right">
+            <img src="images/tel.jpg" alt="电话小图标">24小时服务热线：<span class="tel">123-456-7890</span>
+        </div>
+        <!-- end logo-right -->
+    </div>
+    <!-- end logo -->
+
+    <!-- nav-->
+    <nav>
+       <div class="nav-left">
+           <ul>
+               <li><a href="#">首页</a></li>
+               <li><a href="#">关于慕课</a></li>
+               <li><a href="#">新闻动态</a></li>
+               <li><a href="#">课程中心</a></li>
+               <li><a href="#">在线课程</a></li>
+               <li><a href="#">人才招聘</a></li>
+           </ul>
+       </div>
+        <!-- end nav-left -->
+        <div class="nav-right">
+            <form action="" method="post">
+                <label >
+                    <input type="text" class="search-text">
+                    </label>
+            </form>
+        </div>
+        <!-- end nav-right -->
+    </nav>
+    <!-- end nav-->
+
+    <div class="ad" id="picBox">
+        <div class="loading">
+            <img src="images/loading.gif" alt="正在加载中">
+        </div>
+        <div class="pic">
+            <ul>
+                <li><img src="images/ad2.jpg" alt=""></li>
+                <li><img src="images/ad3.jpg" alt=""></li>
+                <li><img src="images/ad4.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end ad -->
+
+    <div class="main">
+        <div class="news">
+            <div class="news-title">
+                <h2 class="title-left">新闻中心</h2>
+                <span class="title-right"><a href="#"> More&gt;&gt;</a></span>
+            </div>
+            <!-- end new-title -->
+            <div class="news-pic">
+                <img src="images/news.jpg" alt="新闻">
+                <h2><a href="#">520 女神喊你开表白</a></h2>
+                <p>活动时间：5月20日-5月25日<br>获奖公布时间： 5月26日<br><a href="#">More&gt;&gt;</a></p>
+            </div>
+            <!-- end new-pic -->
+            <div class="news-list">
+                <ul>
+                    <li>
+                        <a href="#">[慕课访谈 用户篇]“有为屌丝在路上”<span>2016-9-11</span></a>
+                    </li>
+                    <li>
+                        <a href="#">[慕课访谈]“有为屌丝在路上”<span>2016-9-12</span></a>
+                    </li>
+                    <li>
+                        <a href="#">[慕课访谈]“有为屌丝在路上”<span>2016-9-13</span></a>
+                    </li>
+                    <li>
+                        <a href="#">[慕课访谈]“有为屌丝在路上”<span>2016-9-14</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end news -->
+        <div class="lesson">
+            <div class="lesson-title">
+                    <h2 class="title-left">课程中心</h2>
+                    <span class="title-right"><a href="#"> More&gt;&gt;</a></span>
+            </div>
+            <!-- end lesson-title -->
+            <div class="lesson-pic">
+                <img src="images/css.jpg" alt="css圆角进化论">
+                <h2><a href="#">css圆角进化理论</a></h2>
+                <p>css圆角的实现，经历了三大发展阶段：背景图片方式 csss2.0加HTML标签模拟、css3.0圆角属性。本例详细讲解了每一种昂的实现方式，并对实现的缺点进行了对比比较。</p>
+            </div>
+            <!-- end lesson-pic -->
+            <div class="lesson-list">
+                <ul>
+                    <li><a href="#">PHP开发</a></li>
+                    <li><a href="#">前端开发</a></li>
+                    <li><a href="#">JAVA开发</a></li>
+                    <li><a href="#">Android开发</a></li>
+                </ul>
+            </div>
+            <!-- end lesson-list -->
+        </div>
+        <!-- end lesson -->
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <h2 class="title-left">媒体聚焦</h2>
+                <span class="title-right"><a href="#"> More&gt;&gt;</a></span>
+            </div>
+            <div class="sidebar-mid">
+                <embed src="http://player.youku.com/player.php/sid/XNjkzMDE5MTUy/v.swf" allowFullScreen="true" quality="high" width="220" height="140" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+            </div>
+            <div class="sidebar-bottom">
+                <img src="images/app.jpg" alt="喜获app store 推荐">
+            </div>
+        </div>
+        <!-- end sidebar-->
+    </div>
+    <!-- end main-->
+</div>
+<!-- end warpper -->
+
+<footer>
+    <div class="copyright-content">
+        <ul>
+            <li>
+                <a href="#">关于</a>
+                <ul>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">版权声明</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">课程</a>
+                <ul>
+                    <li><a href="#">PHP开发</a></li>
+                    <li><a href="#">前端开发</a></li>
+                    <li><a href="#">JAVA开发</a></li>
+                    <li><a href="#">Android开发</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">关注</a>
+                <ul>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">腾讯微博</a></li>
+                    <li><a href="#">企业微信</a></li>
+                    <li><a href="#">QQ空间</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">留言</a>
+                <ul>
+                    <li><a href="#">意见反馈</a></li>
+                    <li><a href="#">问题留言</a></li>
+                    <li><a href="#">媒体联络</a></li>
+                    <li><a href="#">在线客服</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><img src="images/weixin.png">微信关注</a>
+                <ul>
+                    <li><img src="images/qrcode.jpg" alt="二维码"></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script >
+//调用myFocuse中的方法
+    myFocus.set(
+            {
+                id:"picBox"
+            }
+    );
+</script>
+</body>
+</html>
